@@ -1,0 +1,87 @@
+body {
+	background-color: #ffdf8c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.wrapper {
+	width: calc(100vw - 100px);
+	height: 100%;
+	background-color: #fff;
+	margin: 50px auto;
+	border-radius: 10px;
+	max-width: 1400px;
+}
+
+.container {
+	width: 90%;
+	margin: 0 auto;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
+.cart__button-header {
+	min-width: 150px;
+	min-height: 50px;	
+	background: #fe5f1e;
+	color: fff;
+}
+
+.cart__button-count {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {	
+	border-radius: 30px;
+	border: 0;
+    color: #ffffff;
+	transition: background-color .15s ease-in-out, border-color .15s ease-in-out;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn:hover {
+    background-color: #f24701;
+}
+.btn-outline{    
+    padding: 0px 18px 0px 18px;
+	min-height: 32px;
+	background: #ffffff;
+	border: 1px solid #eb5a1e;
+	box-sizing: border-box;
+	color: #eb5a1e;	
+	cursor: pointer;
+}
+.btn-outline:hover{
+    background-color: #eb5a1e;
+    span{
+        color: white;
+    }
+    i{
+        background-color: #fff;
+        color: #eb5a1e;
+    }
+    svg {
+        path{
+            
+            fill: #fff
+        }
+    }
+}
+
+
+
+
+///MENU
+
+
+
+///CONTENT
