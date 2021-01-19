@@ -1,23 +1,26 @@
-// import Button from './';
-
 import logoSvg from '../assets/img/logo.png';
+import Button from './Button';
+import { Link, Route } from 'react-router-dom';
 
 function Header() {
 	return (
 		<header className='header'>
-			<div className='container'>
+			<div className='container'>			
 				<div className=' header__container'>
-					<div className='logo'>
-						<a href='/#' className='logo__link'>
+					<Link to='/'>
+						<div className='logo'>						
 							<img src={logoSvg} alt='cart' className='loho__img' />
 							<div className='logo__text'>
+								<Route path ='/' exact >
 								<p className='logo__p'>REACT PIZZA</p>
+								</Route>
 								<h3 className='logo__h3'>самая вкусная пицца во вселенной</h3>
-							</div>
-						</a>
+							</div>						
 					</div>
+					</Link>
 					<div className='cart'>
-						<button className='cart__button-header btn'>
+						<Link to='/cart'>
+						<Button className='btn' headerBtn>
 							<span className='cart__price'>520 ₽</span>
 							<div className='cart__line'></div>
 							<div className='cart__button-count'>
@@ -52,7 +55,9 @@ function Header() {
 								</svg>
 								<span className='cart__count'>3</span>
 							</div>
-						</button>
+						</Button>
+					
+						</Link>
 					</div>
 				</div>
 			</div>
