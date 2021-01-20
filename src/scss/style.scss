@@ -1,7 +1,8 @@
+/** @format */
+
 @import 'libs/normalize';
 @import 'common';
 @import 'fonts';
-
 
 .header {
 	border-radius: 10px 10px 0px 0px;
@@ -68,8 +69,6 @@
 	margin-right: 14px;
 }
 
-
-
 .cart__count {
 	font-family: Proxima Nova;
 	font-style: normal;
@@ -81,7 +80,7 @@
 
 //CATEGORIES
 
-.filter-box{
+.filter-box {
 	margin-top: 40px;
 	display: flex;
 }
@@ -90,7 +89,7 @@
 	font-style: normal;
 	font-weight: bold;
 	font-size: 16px;
-	line-height: 19px;	
+	line-height: 19px;
 	letter-spacing: 0.015em;
 
 	display: inline-block;
@@ -100,8 +99,8 @@
 	color: black;
 }
 
-.categories__li-btn:hover{
-    background-color: #f4f4f4;
+.categories__li-btn:hover {
+	background-color: #f4f4f4;
 }
 
 .categories__li-btn.active {
@@ -156,34 +155,33 @@
 	border-radius: 10px;
 	ul {
 		display: flex;
-	flex-direction: column;
+		flex-direction: column;
 	}
 	li {
 		padding-left: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-family: Proxima Nova;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 17px;
-	letter-spacing: 0.015em;
-	color: #000000;
-	cursor: pointer;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		font-family: Proxima Nova;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		letter-spacing: 0.015em;
+		color: #000000;
+		cursor: pointer;
 	}
 	li:first-child {
 		margin-top: 12px;
 	}
 	ul li.active,
 	ul li:hover {
-	background: rgba(254, 95, 30, 0.05);
+		background: rgba(254, 95, 30, 0.05);
 	}
 	li.active {
 		font-weight: bold;
 		color: #fe5f1e;
 	}
 }
-
 
 //CONTENT
 
@@ -211,8 +209,12 @@
 	width: 280px;
 	text-align: center;
 	margin-bottom: 65px;
-	.btn-outline{
+	.btn-outline {
 		height: 48px;
+	}
+	img {
+		width: 100%;
+		height: auto;
 	}
 }
 
@@ -264,10 +266,18 @@
 	letter-spacing: 0.015em;
 }
 
-.pizza-block__selector ul li.active {
-	background: #ffffff;
-	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
-	border-radius: 5px;
+.pizza-block__selector {
+	ul li {
+		&.active {
+			background: #ffffff;
+			box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+			border-radius: 5px;
+		}
+		&.disabled {
+			opacity: 0.3;
+			pointer-events: none;
+		}
+	}
 }
 
 .pizza-block__bottom {
@@ -285,7 +295,6 @@
 	line-height: 27px;
 	letter-spacing: 0.015em;
 }
-
 
 .pizza-block__bottom span {
 	padding-left: 10px;
@@ -442,8 +451,8 @@
 }
 
 .cart__item-remove {
-    width: 4%;
-    
+	width: 4%;
+
 	.cart__item-button-remove {
 		border: 2px solid #d0d0d0;
 		border-radius: 50%;
