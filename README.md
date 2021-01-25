@@ -1,1 +1,8 @@
-React, React-Router, React-Redux, Redux, prop-types, axios, classname, scss
+- React
+- React-Router 
+- React-Redux
+- Redux
+- prop-types
+- axios
+- classname
+- scss
