@@ -6,7 +6,7 @@ function SortPopup({ items }) {
 	const [visiblePopup, setVisiblePopup] = React.useState(false);
 	const [activeItem, setActiveItem] = React.useState(1)
 	const activeLabel = items[activeItem].name
-	console.log(activeLabel)
+
 	const sortRef = React.useRef()
 
 
