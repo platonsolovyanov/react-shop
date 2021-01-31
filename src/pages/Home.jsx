@@ -5,6 +5,11 @@ import { Categories, SortPopup, PizzaItem } from '../container/index';
 import { setCategory } from '../store/actions/filterAction';
 
 const categoryName = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
+const sortItems = [
+	{ name: 'популярности', type: 'popular' },
+	{ name: 'цене', type: 'price' },
+	{ name: 'алфавиту', type: 'alphabet' },
+]
 
 function Home() {
 	const dispatch = useDispatch();
@@ -22,11 +27,7 @@ function Home() {
 					onClickItem={onSelectCategory}
 				/>
 				<SortPopup
-					items={[
-						{ name: 'популярности', type: 'popular' },
-						{ name: 'цене', type: 'price' },
-						{ name: 'алфавиту', type: 'alphabet' },
-					]}
+					items={sortItems}
 				/>
 			</div>
 			<div className='container'>
