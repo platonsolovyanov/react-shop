@@ -14,8 +14,18 @@ import { Home, Cart } from "./pages";
 function App() {
 	const dispatch = useDispatch();
 
+	window.test = () => {
+		// 'http://localhost:3000/pizzas?&_order=desc&_sort=price'
+		axios.get('http://localhost:3004/pizzas?&_order=desc&_sort=price')
+			.then(({ data }) => {
+				dispatch(setPizzasAction(data))
+			})
+	}
+
 
 	React.useEffect(() => {
+		//перенести в Redux и подключить rrux-thunk
+
 		axios.get('http://localhost:3000/db.json')
 			.then(({ data }) => {
 				dispatch(setPizzasAction(data.pizzas))
